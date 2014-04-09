@@ -1,0 +1,36 @@
+Dependencies
+------------
+
+Uses lpthread library for multiple threads
+
+Running:
+--------
+
+make appserver
+
+./bin appserver.o <portNo>
+
+
+How to connect to server
+------------------------
+
+1.telnet localhost <portNo>
+
+Given below sample input set
+
+telnet localhost 10001
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+
+> func=factorial|num1=4#
+result=6#
+> func=sum|num1=10|num2=20#
+result=30#
+> func=sum|num1=10|num2=20#
+result=30#
+> func=sum|num1=10|#
+error=invalid params#
+> func=sum|nu
+> m1=10|num2=20#
+result=30#
