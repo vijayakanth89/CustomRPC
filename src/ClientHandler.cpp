@@ -126,3 +126,7 @@ void ClientHandler::Factorial(string num1, string &res )
 		res = string(buf);
 	}
 }
+void ClientHandler::Reduce(string num, string &res )
+{
+
+}
